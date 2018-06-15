@@ -1,0 +1,23 @@
+  var ar=[];// the joined array
+  var len=0;
+  var j = 0;
+ 
+ ar= arr.join('');
+  if(ar.length % 2 == 0)
+    {
+      len = ar.length/size;
+    }
+  else
+    len = (ar.length/size) + 1;//len is the number of subarrays created
+  console.log("ar" +ar);
+  var newarr=[];
+  
+  for( i = 0; i < len ; i++)
+    {
+      newarr.push( ar.slice(j,size).split(''));
+      console.log("newarr" + newarr);
+      j=j+size;
+    }
+  
+  return newarr;
+ 
